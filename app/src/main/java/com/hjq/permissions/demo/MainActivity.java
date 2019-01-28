@@ -2,6 +2,7 @@ package com.hjq.permissions.demo;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 
 import com.hjq.permissions.OnPermission;
@@ -14,6 +15,8 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+    private static final String TAG = "MainActivity";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         ToastUtils.initStyle(new ToastWhiteStyle());
         //初始化吐司工具类
         ToastUtils.init(getApplicationContext());
+        Log.i(TAG, "onCreate: ");
     }
 
     public void requestPermission(View view) {
