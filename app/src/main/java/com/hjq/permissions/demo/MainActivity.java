@@ -22,8 +22,6 @@ public class MainActivity extends AppCompatActivity {
         ToastUtils.initStyle(new ToastWhiteStyle());
         //初始化吐司工具类
         ToastUtils.init(getApplicationContext());
-
-        
     }
 
     public void requestPermission(View view) {
